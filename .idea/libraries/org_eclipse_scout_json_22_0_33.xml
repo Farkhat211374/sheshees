@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="org.eclipse.scout.json-22.0.33">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../Java/org.eclipse.scout.json-22.0.33.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ideaLibSources/org.eclipse.scout.json-22.0.33-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

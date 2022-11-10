@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import org.controlsfx.glyphfont.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1024.0" styleClass="parent" stylesheets="@css/adminScene.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.AdminController">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="50.0" styleClass="sidebar" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="42.0" fitWidth="49.0" layoutX="4.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="sidebar_icons" AnchorPane.bottomAnchor="544.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="14.0">
+               <image>
+                  <Image url="@../../icons/bars-solid.png" />
+               </image>
+            </ImageView>
+            <VBox layoutX="4.0" layoutY="114.0">
+               <children>
+                  <ImageView fx:id="homeTab" fitHeight="42.0" fitWidth="49.0" onMouseClicked="#handleHomeAction" onMouseEntered="#homeOnMouseEntered" onMouseExited="#homeOnMouseExited" pickOnBounds="true" preserveRatio="true" styleClass="sidebar_icons">
+                     <image>
+                        <Image url="@../../icons/home.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="settingsTab" fitHeight="42.0" fitWidth="49.0" onMouseClicked="#handleSettingsAction" onMouseEntered="#settingsOnMouseEntered" onMouseExited="#settingsOnMouseExited" pickOnBounds="true" preserveRatio="true" styleClass="sidebar_icons">
+                     <image>
+                        <Image url="@../../icons/settings.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="messengeTab" fitHeight="42.0" fitWidth="49.0" onMouseClicked="#handleMessengerAction" onMouseEntered="#MessengerOnMouseEntered" onMouseExited="#MessengerOnMouseExited" pickOnBounds="true" preserveRatio="true" styleClass="sidebar_icons">
+                     <image>
+                        <Image url="@../../icons/messeng.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="notificationTab" fitHeight="42.0" fitWidth="49.0" onMouseClicked="#handleNotificationAction" onMouseEntered="#notificationOnMouseEntered" onMouseExited="#notificationOnMouseExited" pickOnBounds="true" preserveRatio="true" styleClass="sidebar_icons">
+                     <image>
+                        <Image url="@../../icons/bell.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Separator prefHeight="68.0" prefWidth="42.0" />
+                  <ImageView fx:id="closeTab" fitHeight="42.0" fitWidth="49.0" onMouseClicked="#handleCloseAction" onMouseEntered="#closeOnMouseEntered" onMouseExited="#closeOnMouseExited" pickOnBounds="true" preserveRatio="true" styleClass="sidebar_icons">
+                     <image>
+                        <Image url="@../../icons/close.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+         </children>
+         <effect>
+            <DropShadow height="40.43" radius="14.2725" width="18.66" />
+         </effect></AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

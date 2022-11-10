@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox maxHeight="40.0" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: red;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.UserChooseTransportController">
+   <children>
+      <Button fx:id="carButton" mnemonicParsing="false" onAction="#choose" prefHeight="30.0" prefWidth="50.0" style="-fx-background-color: #99cc66;" styleClass="carButton" text="Car">
+         <HBox.margin>
+            <Insets left="40.0" />
+         </HBox.margin>
+      </Button>
+      <Button fx:id="planeButton" mnemonicParsing="false" onAction="#choose" prefHeight="30.0" prefWidth="50.0" style="-fx-background-color: #99cc66;" styleClass="planeButton" text="Plane" translateX="10.0">
+         <HBox.margin>
+            <Insets left="10.0" />
+         </HBox.margin>
+      </Button>
+   </children>
+   <padding>
+      <Insets top="5.0" />
+   </padding>
+</HBox>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="339.0" prefWidth="242.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.userHomeController">
+   <children>
+      <VBox layoutX="73.0" layoutY="51.0" prefHeight="200.0" prefWidth="98.0" spacing="10.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <HBox prefHeight="45.0" prefWidth="242.0" spacing="10.0">
+               <children>
+                  <VBox prefHeight="82.0" prefWidth="273.0" spacing="10.0">
+                     <children>
+                        <Label text="BodyType:">
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <HBox prefHeight="31.0" prefWidth="134.0" spacing="10.0">
+                           <children>
+                              <Button fx:id="HatchbackBut" mnemonicParsing="false" onAction="#setCarBodyType" prefHeight="23.0" prefWidth="72.0" text="Hatchback">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="SedanBut" mnemonicParsing="false" onAction="#setCarBodyType" prefHeight="23.0" prefWidth="44.0" text="Sedan">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="SportBut" mnemonicParsing="false" onAction="#setCarBodyType" prefHeight="23.0" prefWidth="50.0" text="Sport">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="31.0" prefWidth="134.0" spacing="10.0">
+                           <children>
+                              <Button fx:id="MinivanBut" mnemonicParsing="false" onAction="#setCarBodyType" prefHeight="23.0" prefWidth="72.0" text="Minivan">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="SuvBut" mnemonicParsing="false" onAction="#setCarBodyType" prefHeight="23.0" prefWidth="42.0" text="SUV">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="SuperBut" mnemonicParsing="false" onAction="#setCarBodyType" prefHeight="23.0" prefWidth="52.0" text="Super">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="45.0" prefWidth="242.0" spacing="10.0">
+               <children>
+                  <VBox prefHeight="82.0" prefWidth="323.0" spacing="10.0">
+                     <children>
+                        <Label text="FuelType:">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <HBox prefHeight="31.0" prefWidth="134.0" spacing="10.0">
+                           <children>
+                              <Button fx:id="gasBut" mnemonicParsing="false" onAction="#setCarFuelType" prefHeight="23.0" prefWidth="74.0" text="NaturalGas">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="petrolBut" mnemonicParsing="false" onAction="#setCarFuelType" prefHeight="23.0" prefWidth="62.0" text="Petrol">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="31.0" prefWidth="134.0" spacing="10.0">
+                           <children>
+                              <Button fx:id="electricBut" mnemonicParsing="false" onAction="#setCarFuelType" prefHeight="23.0" prefWidth="57.0" text="Electric">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="hybridBut" mnemonicParsing="false" onAction="#setCarFuelType" prefHeight="23.0" prefWidth="51.0" text="Hybrid">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="dieselBut" mnemonicParsing="false" onAction="#setCarFuelType" prefHeight="23.0" prefWidth="48.0" text="Diesel">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="24.0" prefWidth="242.0" spacing="10.0">
+               <children>
+                  <VBox prefHeight="49.0" prefWidth="258.0" spacing="10.0">
+                     <children>
+                        <Label text="Class:">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <HBox prefHeight="20.0" prefWidth="156.0" spacing="10.0">
+                           <children>
+                              <Button fx:id="businessBut" mnemonicParsing="false" prefHeight="23.0" prefWidth="57.0" text="Business">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="comfortBut" mnemonicParsing="false" prefHeight="23.0" prefWidth="64.0" text="Comfort">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="economyBut" mnemonicParsing="false" prefHeight="23.0" prefWidth="50.0" text="Economy">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="45.0" prefWidth="242.0" spacing="10.0">
+               <children>
+                  <VBox prefHeight="82.0" prefWidth="240.0" spacing="10.0">
+                     <children>
+                        <Label text="Manufacturer">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <HBox prefHeight="23.0" prefWidth="235.0" spacing="10.0">
+                           <children>
+                              <Button fx:id="americaBut" mnemonicParsing="false" prefHeight="23.0" prefWidth="57.0" text="America">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="europeBut" mnemonicParsing="false" prefHeight="23.0" prefWidth="64.0" text="Europe">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="asianBut" mnemonicParsing="false" prefHeight="23.0" prefWidth="50.0" text="Asian">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

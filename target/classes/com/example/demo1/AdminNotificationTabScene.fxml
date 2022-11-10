@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="notificationTab" stylesheets="@css/adminScene.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.adminNotificationController">
+   <children>
+      <Label layoutX="37.0" layoutY="14.0" text="Notifications">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Label>
+      <ScrollPane fx:id="sp_main" layoutX="33.0" layoutY="78.0" prefHeight="307.0" prefWidth="580.0" styleClass="scrollPane" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="50.0">
+         <content>
+            <VBox fx:id="vbox_messages" prefHeight="344.0" prefWidth="569.0" styleClass="VboxScroll">
+               <children>
+                  <SplitPane orientation="VERTICAL" prefHeight="13.0" prefWidth="518.0" visible="false">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="4.0" prefWidth="516.0" />
+                    </items>
+                  </SplitPane>
+               </children></VBox>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

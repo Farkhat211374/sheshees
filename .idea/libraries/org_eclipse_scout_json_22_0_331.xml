@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="org.eclipse.scout.json-22.0.331">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../Java/org.eclipse.scout.json-22.0.33.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Java/openjfx-19_windows-x64_bin-sdk.zip!/javafx-sdk-19/lib" />
+      <root url="jar://$USER_HOME$/Downloads/opencsv-3.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Java/controlsfx-8.40.11.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ideaLibSources/org.eclipse.scout.json-22.0.33-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

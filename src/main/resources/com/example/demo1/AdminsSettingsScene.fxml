@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="settingsTab" stylesheets="@css/adminScene.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.adminSettingsController">
+   <children>
+      <Label layoutX="33.0" layoutY="20.0" text="Settings">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <VBox fx:id="enterDistance" layoutX="148.0" layoutY="50.0" prefHeight="301.0" prefWidth="305.0" styleClass="userHomeFirstHalf" stylesheets="@css/adminScene.css">
+         <children>
+            <Label contentDisplay="CENTER" prefHeight="38.0" prefWidth="161.0" text="  Change user status" translateX="44.0" translateY="10.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+            </Label>
+            <ChoiceBox fx:id="username" prefWidth="150.0" translateX="50.0">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </ChoiceBox>
+            <ChoiceBox fx:id="status" prefWidth="150.0" translateX="50.0">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </ChoiceBox>
+            <Button fx:id="submitButton" alignment="CENTER" mnemonicParsing="false" onAction="#submitButtonOnAction" prefHeight="30.0" prefWidth="150.0" text="Change" translateX="50.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Label id="labelWarning1" fx:id="warning" prefHeight="31.0" prefWidth="151.0" stylesheets="@css/adminScene.css" translateX="50.0" translateY="10.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </Label>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets left="25.0" right="25.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

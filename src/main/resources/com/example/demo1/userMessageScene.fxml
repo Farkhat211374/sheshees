@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="settingsTab" stylesheets="@css/adminScene.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.userMessageController">
+   <children>
+      <TextField fx:id="messageTextField" alignment="TOP_LEFT" layoutX="136.0" layoutY="127.0" prefHeight="97.0" prefWidth="329.0" />
+      <Label layoutX="158.0" layoutY="82.0" text="Write a complaint or about a problem">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="submitButton" layoutX="233.0" layoutY="295.0" mnemonicParsing="false" onAction="#submitButtonOnAction" prefHeight="31.0" prefWidth="135.0" text="Submit" />
+      <Label fx:id="answerLabel" alignment="CENTER" layoutX="119.0" layoutY="254.0" prefHeight="21.0" prefWidth="363.0" textFill="#22ab32" />
+      <Label layoutX="39.0" layoutY="28.0" text="Messenger">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

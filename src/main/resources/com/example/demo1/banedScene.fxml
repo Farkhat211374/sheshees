@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="255.0" layoutY="275.0" text="Sorry, but you were banned for a whole year!" textFill="RED">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="341.0" layoutY="139.0" text=":(  OOPS">
+         <font>
+            <Font size="88.0" />
+         </font>
+      </Label>
+      <Label layoutX="418.0" layoutY="333.0" text="The reasons are not known">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

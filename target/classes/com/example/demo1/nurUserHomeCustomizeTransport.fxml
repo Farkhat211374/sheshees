@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.UserCustomizeTransportController">
+   <children>
+      <Label prefWidth="112.0" text="Customize" translateX="94.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="5.0" />
+         </VBox.margin>
+      </Label>
+      <HBox maxHeight="40.0" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: red;">
+         <children>
+            <Button fx:id="carButton" mnemonicParsing="false" onAction="#choose" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: #99cc66;" styleClass="carButton" text="Car" translateX="60.0">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="planeButton" mnemonicParsing="false" onAction="#choose" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: #99cc66;" styleClass="planeButton" text="Plane" translateX="120.0">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets top="5.0" />
+         </padding>
+      </HBox>
+      <VBox fx:id="decoration" minHeight="290.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: purple;" />
+      <Button fx:id="customizeButton" minHeight="26.0" mnemonicParsing="false" onAction="#setCustomizeButton" text="Customize" translateX="114.0" translateY="2.5">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </Button>
+   </children>
+</VBox>
